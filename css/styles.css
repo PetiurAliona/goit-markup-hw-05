@@ -365,9 +365,8 @@ span {
 /* .team-item:not(:last-child) { 
   margin-right: 30px;
 }*/
-
-.section p {
-  font-family: Roboto;
+/ .p-benefits {
+  font-family: "Roboto";
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 0;
@@ -635,10 +634,17 @@ span {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  /* transform: translateY(100%); */
+  transform: translateY(100%);
+
+  transition: transform 250ms linear;
 
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
+}
+
+.examples-wrapper-list:hover .overlay-examples,
+.examples-wrapper-list:focus .overlay-examples {
+  transform: translateY(0%);
 }
 
 /* ===========Модальное окно============== */
